@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="kk" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Муратқызы Айнэль | Жеке Портфолио</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        lavender: {
+                            50: '#fbf8ff',
+                            100: '#f5eeef',
+                            200: '#ebdcfd',
+                            300: '#d9c2f9',
+                            500: '#a87bf1',
+                            600: '#8e51ea',
+                            700: '#7637d4',
+                        },
+                        roseWarm: {
+                            50: '#fff5f7',
+                            100: '#ffe6ec',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                        },
+                        softCream: '#faf7f2',
+                        warmDark: '#2d2735'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(235, 220, 253, 0.6);
+        }
+        .perspective-1000 {
+            perspective: 1000px;
+        }
+        .transform-style-3d {
+            transform-style: preserve-3d;
+        }
+        .backface-hidden {
+            backface-visibility: hidden;
+        }
+        .rotate-y-180 {
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body class="bg-softCream text-warmDark font-sans selection:bg-lavender-200 selection:text-lavender-700 antialiased">
+
+    <!-- Навигация (Header) -->
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 glass-card border-b border-lavender-100" id="navbar">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group">
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-lavender-500 to-roseWarm-400 flex items-center justify-center text-white font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+                    АМ
+                </div>
+                <span class="font-bold text-lg tracking-tight text-warmDark group-hover:text-lavender-600 transition-colors">Айнэль М.</span>
+            </a>
+
+            <!-- Навигация сілтемелері (Desktop) -->
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                <a href="#about" class="hover:text-lavender-600 transition-colors">Мен туралы</a>
+                <a href="#skills" class="hover:text-lavender-600 transition-colors">Дағдылар & Тілдер</a>
+                <a href="#interactive" class="hover:text-lavender-600 transition-colors">Тілдік карточкалар</a>
+                <a href="#goals" class="hover:text-lavender-600 transition-colors">Мақсаттар</a>
+                <a href="#contact" class="px-5 py-2.5 bg-lavender-600 text-white rounded-xl shadow-sm hover:bg-lavender-700 transition-all hover:shadow-md">Байланысу</a>
+            </div>
+
+            <!-- Мобильді мәзір батырмасы -->
+            <button id="menuBtn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none" aria-label="Мәзірді ашу">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Мобильді Навигация -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 border-b border-lavender-100 px-6 py-4 flex-col gap-4 text-slate-700 font-medium shadow-lg">
+            <a href="#about" class="mobile-link py-2 border-b border-slate-50">Мен туралы</a>
+            <a href="#skills" class="mobile-link py-2 border-b border-slate-50">Дағдылар & Тілдер</a>
+            <a href="#interactive" class="mobile-link py-2 border-b border-slate-50">Тілдік карточкалар</a>
+            <a href="#goals" class="mobile-link py-2 border-b border-slate-50">Мақсаттар</a>
+            <a href="#contact" class="mobile-link py-2 text-lavender-600 font-semibold">Байланысу</a>
+        </div>
+    </nav>
+
+    <!-- Hero Бөлімі -->
+    <section class="pt-32 pb-20 md:pt-40 md:pb-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7 space-y-6 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-lavender-50 border border-lavender-200 text-lavender-700 text-xs sm:text-sm font-semibold tracking-wide">
+                    <span class="w-2 h-2 rounded-full bg-lavender-500 animate-pulse"></span>
+                    📍 Атырау қаласы | Колледж студенті
+                </div>
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-warmDark">
+                    Муратқызы <span class="text-transparent bg-clip-text bg-gradient-to-r from-lavender-600 via-roseWarm-500 to-purple-600">Айнэль</span>
+                </h1>
+                
+                <p class="text-lg sm:text-xl text-slate-600 font-medium">
+                    Болашақ Инновациялық Педагог & Лингвистика Әуесқойы
+                </p>
+
+                <p class="text-slate-600 leading-relaxed max-w-xl mx-auto md:mx-0">
+                    Атырау қаласындағы педагогика колледжінің 16 жастағы студентімін. Жаңа заманауи оқыту әдістерін қолдануға, шет тілдерін (Ағылшын, Корей, Орыс) меңгеруге және білім беру жүйесіне инновация енгізуге ұмтыламын.
+                </p>
+
+                <div class="pt-4 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+                    <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 bg-warmDark hover:bg-slate-800 text-white font-semibold rounded-xl shadow-lg transition-all hover:-translate-y-0.5 text-center">
+                        Хабарласу <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                    </a>
+                    <a href="#interactive" class="w-full sm:w-auto px-7 py-3.5 bg-white hover:bg-slate-50 text-slate-700 font-semibold rounded-xl border border-lavender-200 shadow-sm transition-all text-center">
+                        Тілдік карточкалар <i class="fa-solid fa-language ml-2 text-lavender-600"></i>
+                    </a>
+                </div>
+
+                <!-- Негізгі көрсеткіштер -->
+                <div class="pt-8 grid grid-cols-3 gap-4 border-t border-lavender-200/80">
+                    <div>
+                        <p class="text-2xl font-bold text-warmDark">16</p>
+                        <p class="text-xs text-slate-500 font-medium">Жас</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-warmDark">3</p>
+                        <p class="text-xs text-slate-500 font-medium">Тіл (English, Korean, RU)</p>
+                    </div>
+                    <div>
+                        <p class="text-2xl font-bold text-warmDark">Pedagogy</p>
+                        <p class="text-xs text-slate-500 font-medium">Мамандығы</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Бейнелік Карточка -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="absolute -top-4 -left-4 w-72 h-72 bg-lavender-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob"></div>
+                    <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-roseWarm-100 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-2000"></div>
+                    
+                    <div class="relative glass-card p-6 rounded-3xl shadow-xl space-y-6">
+                        <div class="w-full h-64 rounded-2xl bg-gradient-to-tr from-lavender-100 via-roseWarm-50 to-purple-100 flex flex-col items-center justify-center p-6 text-center border border-white">
+                            <div class="w-24 h-24 rounded-full bg-white shadow-md flex items-center justify-center text-4xl mb-4 text-lavender-600">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg">Заманауи Ұстаз Көзқарасы</h3>
+                            <p class="text-xs text-slate-500 mt-2">«Білім мен тіл — болашаққа ашатын ең сенімді есік»</p>
+                        </div>
+
+                        <div class="space-y-3">
+                            <div class="p-3 bg-white/80 rounded-xl flex items-center gap-3 border border-lavender-100 shadow-sm">
+                                <div class="w-8 h-8 rounded-lg bg-lavender-100 text-lavender-600 flex items-center justify-center text-sm font-bold">
+                                    <i class="fa-solid fa-sparkles"></i>
+                                </div>
+                                <div class="text-xs">
+                                    <p class="font-semibold text-slate-800">Инновациялық Әдістер</p>
+                                    <p class="text-slate-500">Геймификация және заманауи құралдар</p>
+                                </div>
+                            </div>
+
+                            <div class="p-3 bg-white/80 rounded-xl flex items-center gap-3 border border-lavender-100 shadow-sm">
+                                <div class="w-8 h-8 rounded-lg bg-roseWarm-100 text-roseWarm-500 flex items-center justify-center text-sm font-bold">
+                                    <i class="fa-solid fa-globe"></i>
+                                </div>
+                                <div class="text-xs">
+                                    <p class="font-semibold text-slate-800">Көптілділік Бағыты</p>
+                                    <p class="text-slate-500">Ағылшын, Корей және Орыс тілдері</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мен туралы (About) Бөлімі -->
+    <section id="about" class="py-20 bg-white/70 border-y border-lavender-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-lavender-600 mb-2">Танысу</h2>
+                <p class="text-3xl font-extrabold text-warmDark">Мен туралы</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-lavender-50 text-lavender-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-city"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Атырау Қаласы</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Атырауда туып-өсіп, қазіргі уақытта педагогикалық бағытта сапалы білім алып жатқан 16 жастағы колледж студентімін.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-roseWarm-50 text-roseWarm-500 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Педагогика Мамандығы</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Оқытудың жаңа форматын, балалар психологиясын, цифрлық білім беру құралдары мен интерактивті сабақ өту әдістерін зерттеймін.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm hover:shadow-md transition-all">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Тілдерге Әуестік</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Шет тілдерін үйрену — менің басты хоббиім әрі мақсатым. Ағылшын, корей және орыс тілдерін тұрақты түрде дамытудамын.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Тілдік дағдылар (Languages - ТҮРІК ТІЛІ ЖОҚ) -->
+    <section id="skills" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-lavender-600 mb-2">Білім & Қабілет</h2>
+            <p class="text-3xl font-extrabold text-warmDark">Тілдік портфель & Педагогика</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Тілдік білім (Languages Only: English, Korean, Russian, Kazakh) -->
+            <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-earth-asia text-lavender-600"></i> Тілдерді меңгеру деңгейі
+                    </h3>
+
+                    <div class="space-y-4">
+                        <!-- Қазақ тілі -->
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="font-bold text-slate-800 text-sm">Қазақ тілі</span>
+                                <span class="px-2.5 py-0.5 text-xs font-semibold bg-emerald-100 text-emerald-800 rounded-md">Ана тілі</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Кәсіби, академиялық еркін деңгей</p>
+                        </div>
+
+                        <!-- Ағылшын тілі -->
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="font-bold text-slate-800 text-sm">Ағылшын тілі (English)</span>
+                                <span class="px-2.5 py-0.5 text-xs font-semibold bg-lavender-200 text-lavender-700 rounded-md">B2 (Upper-Intermediate)</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Ауызша және жазбаша еркін байланыс, сабақ жүргізу дағдылары</p>
+                        </div>
+
+                        <!-- Корей тілі -->
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="font-bold text-slate-800 text-sm">Корей тілі (Korean / 한국어)</span>
+                                <span class="px-2.5 py-0.5 text-xs font-semibold bg-roseWarm-100 text-roseWarm-500 rounded-md">A2 (Бастапқы-орта)</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Хангыль жазуы, негізгі грамматика мен күнделікті диалогтар</p>
+                        </div>
+
+                        <!-- Орыс тілі -->
+                        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="font-bold text-slate-800 text-sm">Орыс тілі (Russian)</span>
+                                <span class="px-2.5 py-0.5 text-xs font-semibold bg-indigo-100 text-indigo-700 rounded-md">C1 (Еркін)</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Қарым-қатынас пен оқу әдебиеттерін еркін меңгеру</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 rounded-2xl bg-lavender-50 border border-lavender-200 text-xs text-lavender-700 flex items-center gap-3">
+                    <i class="fa-solid fa-sparkles text-lg text-lavender-500"></i>
+                    <span>Күнделікті корейше сөздік пен ағылшынша подкасттар арқылы деңгейімді арттырып отырамын.</span>
+                </div>
+            </div>
+
+            <!-- Педагогикалық дағдылар -->
+            <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                        <i class="fa-solid fa-wand-magic-sparkles text-roseWarm-500"></i> Педагогикалық шеберлік
+                    </h3>
+
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-slate-700 mb-1">
+                                <span>Инновациялық & Интерактивті оқыту</span>
+                                <span class="text-lavender-600">88%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-lavender-500 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-slate-700 mb-1">
+                                <span>Цифрлық оқыту құралдары (Canva, Kahoot, Quizlet)</span>
+                                <span class="text-lavender-600">92%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-lavender-500 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-slate-700 mb-1">
+                                <span>Балалар психологиясы & Тілдік бейімдеу</span>
+                                <span class="text-lavender-600">82%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-lavender-500 rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-sm font-semibold text-slate-700 mb-1">
+                                <span>Көптілді ортада сабақ жүргізу</span>
+                                <span class="text-lavender-600">80%</span>
+                            </div>
+                            <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                                <div class="h-full bg-lavender-500 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 p-4 rounded-2xl bg-roseWarm-50 border border-roseWarm-100 text-xs text-roseWarm-500 flex items-center gap-3">
+                    <i class="fa-solid fa-heart text-lg"></i>
+                    <span>«Мақсатым — әр сабақты оқушы үшін қызықты саяхатқа айналдыру.»</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Интерактивті Тіл үйрену құралы (Ағылшын & Корей сөздері) -->
+    <section id="interactive" class="py-20 bg-gradient-to-b from-warmDark to-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="px-3.5 py-1 bg-lavender-500/20 text-lavender-300 rounded-full text-xs font-semibold uppercase tracking-wider">Интерактивті Тілдер</span>
+                <h2 class="text-3xl font-extrabold mt-3">Сөздік Флеш-карточкалар</h2>
+                <p class="text-slate-400 text-sm mt-2">Ағылшын және Корей тілдеріндегі педагогикалық & күнделікті терминдер. Төңкеру үшін басыңыз!</p>
+            </div>
+
+            <!-- Флеш-карта контроллері -->
+            <div class="max-w-md mx-auto">
+                <div class="perspective-1000">
+                    <div id="flashcard" class="relative w-full h-64 rounded-3xl cursor-pointer transform-style-3d transition-transform duration-500 shadow-2xl">
+                        <!-- Алдыңғы беті -->
+                        <div class="absolute inset-0 bg-white text-slate-800 rounded-3xl p-8 flex flex-col items-center justify-between backface-hidden border border-slate-200">
+                            <div class="flex justify-between w-full text-xs text-slate-400 font-bold uppercase tracking-wider">
+                                <span id="cardLang">English</span>
+                                <span id="cardCategory" class="text-lavender-600">Педагогика</span>
+                            </div>
+                            <div class="text-center">
+                                <p id="cardWord" class="text-3xl font-black text-lavender-600 mb-2">Innovation</p>
+                                <p id="cardSub" class="text-xs text-slate-400">[ɪnəˈveɪʃn]</p>
+                            </div>
+                            <p class="text-xs text-slate-400 font-medium">✨ Аудармасын көру үшін басыңыз</p>
+                        </div>
+
+                        <!-- Артқы беті -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-lavender-600 to-purple-600 text-white rounded-3xl p-8 flex flex-col items-center justify-between backface-hidden rotate-y-180">
+                            <div class="flex justify-between w-full text-xs text-lavender-200 font-bold uppercase tracking-wider">
+                                <span>Қазақша Аудармасы</span>
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div class="text-center">
+                                <p id="cardTranslation" class="text-3xl font-bold mb-2">Инновация / Жаңашылдық</p>
+                                <p id="cardExample" class="text-xs text-lavender-100 italic">"Teaching with innovation changes the future."</p>
+                            </div>
+                            <p class="text-xs text-lavender-200 font-medium">Келесі сөзге өту үшін батырманы басыңыз</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Батырмалар -->
+                <div class="flex justify-center items-center gap-4 mt-8">
+                    <button id="prevBtn" class="w-12 h-12 rounded-2xl bg-slate-800 hover:bg-slate-700 text-white flex items-center justify-center transition-colors">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <span id="cardCounter" class="text-sm font-semibold text-slate-400">1 / 4</span>
+                    <button id="nextBtn" class="w-12 h-12 rounded-2xl bg-lavender-600 hover:bg-lavender-500 text-white flex items-center justify-center transition-colors shadow-lg">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мақсаттар мен Жобалар (Goals) -->
+    <section id="goals" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-lavender-600 mb-2">Болашаққа көзқарас</h2>
+            <p class="text-3xl font-extrabold text-warmDark">Педагогикалық Мақсаттарым</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm relative overflow-hidden group hover:-translate-y-1 transition-all">
+                <div class="absolute top-0 left-0 w-2 h-full bg-lavender-500"></div>
+                <div class="text-lavender-600 font-bold text-sm mb-2">01. Заманауи Мұғалім</div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Инновацияны енгізу</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Дәстүрлі сабақтарды заманауи IT құралдармен және ойын арқылы оқыту (Gamification) әдістерімен байыту.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm relative overflow-hidden group hover:-translate-y-1 transition-all">
+                <div class="absolute top-0 left-0 w-2 h-full bg-roseWarm-400"></div>
+                <div class="text-roseWarm-500 font-bold text-sm mb-2">02. Тілдерді Дамыту</div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Халықаралық Деңгей</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Ағылшын тілінен C1 деңгейіне жетіп, Корей тілін тереңдетіп меңгеру. Тілдік тәжірибе алмасу бағдарламаларына қатысу.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-sm relative overflow-hidden group hover:-translate-y-1 transition-all">
+                <div class="absolute top-0 left-0 w-2 h-full bg-purple-500"></div>
+                <div class="text-purple-600 font-bold text-sm mb-2">03. Авторлық Жоба</div>
+                <h3 class="text-lg font-bold text-slate-900 mb-3">Интерактивті Клуб</h3>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                    Атырауда жастар мен оқушыларға арналған көптілді интерактивті сөйлесу клубын ұйымдастыру.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Байланысу Бөлімі (Contact) -->
+    <section id="contact" class="py-20 bg-white/80 border-t border-lavender-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-5 space-y-6">
+                    <div>
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-lavender-600 mb-2">Байланыс</h2>
+                        <p class="text-3xl font-extrabold text-warmDark">Хабарласыңыз</p>
+                    </div>
+
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Педагогикалық идеялар, тіл үйрену бойынша тәжірибе алмасу немесе бірлескен бастамалар үшін әрдайым ашықпын!
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-lavender-50 text-lavender-600 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Орналасқан жері</p>
+                                <p class="text-sm font-semibold text-slate-800">Қазақстан, Атырау қаласы</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-roseWarm-50 text-roseWarm-500 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">E-mail</p>
+                                <p class="text-sm font-semibold text-slate-800">ainel.muratkazy@example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400 font-medium">Мәртебесі</p>
+                                <p class="text-sm font-semibold text-slate-800">Педагогика Колледжінің Студенті</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 flex gap-3">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-lavender-600 hover:text-white flex items-center justify-center text-slate-600 transition-all">
+                            <i class="fa-brands fa-instagram text-lg"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-lavender-600 hover:text-white flex items-center justify-center text-slate-600 transition-all">
+                            <i class="fa-brands fa-telegram text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Форма -->
+                <div class="md:col-span-7">
+                    <form id="contactForm" class="bg-white p-8 rounded-3xl border border-lavender-100 shadow-lg space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-2">Аты-жөніңіз</label>
+                                <input type="text" required placeholder="Есіміңіз" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-lavender-500 focus:border-transparent text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-700 mb-2">E-mail немесе Телефон</label>
+                                <input type="text" required placeholder="байланыс дерегі" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-lavender-500 focus:border-transparent text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-2">Хабарлама тақырыбы</label>
+                            <input type="text" placeholder="Мысалы: Тіл үйрену жобасы" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-lavender-500 focus:border-transparent text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-2">Хабарламаңыз</label>
+                            <textarea rows="4" required placeholder="Осы жерге жазыңыз..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-lavender-500 focus:border-transparent text-sm resize-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 bg-lavender-600 hover:bg-lavender-700 text-white font-semibold rounded-xl shadow-md transition-all hover:shadow-lg">
+                            Хабарлама жіберу
+                        </button>
+
+                        <div id="formStatus" class="hidden p-3 rounded-xl bg-emerald-50 text-emerald-700 text-xs text-center font-medium">
+                            Хабарламаңыз сәтті жіберілді! Рақмет.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-8 bg-warmDark text-slate-400 text-xs text-center border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© 2026 Муратқызы Айнэль. Барлық құқықтар қорғалған.</p>
+            <p class="mt-1 text-slate-500">Атырау қаласы | Жеке Педагогикалық Портфолио</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        });
+
+        // Флеш-карточкалар деректері (Ағылшын & Корей тілдері)
+        const cardsData = [
+            {
+                word: "Innovation",
+                sub: "[ɪnəˈveɪʃn]",
+                translation: "Инновация / Жаңашылдық",
+                example: "Teaching with innovation changes the future.",
+                category: "Педагогика",
+                lang: "English 🇬🇧"
+            },
+            {
+                word: "선생님 (Seonsaengnim)",
+                sub: "[Мұғалім / Ұстаз]",
+                translation: "Ұстаз / Мұғалім",
+                example: "안녕하세요, 선생님! (Сәлеметсіз бе, мұғалім!)",
+                category: "Корей тілі",
+                lang: "Korean 🇰🇷"
+            },
+            {
+                word: "Pedagogy",
+                sub: "[ˈpɛdəɡɒdʒi]",
+                translation: "Педагогика",
+                example: "Modern pedagogy focuses on interactive methods.",
+                category: "Ғылым",
+                lang: "English 🇬🇧"
+            },
+            {
+                word: "배우다 (Bae-uda)",
+                sub: "[Үйрену / Оқу]",
+                translation: "Үйрену / Білім алу",
+                example: "새로운 언어를 배우다. (Жаңа тіл үйрену.)",
+                category: "Корей тілі",
+                lang: "Korean 🇰🇷"
+            }
+        ];
+
+        let currentCardIndex = 0;
+        const flashcard = document.getElementById('flashcard');
+        const cardWord = document.getElementById('cardWord');
+        const cardSub = document.getElementById('cardSub');
+        const cardTranslation = document.getElementById('cardTranslation');
+        const cardExample = document.getElementById('cardExample');
+        const cardCategory = document.getElementById('cardCategory');
+        const cardLang = document.getElementById('cardLang');
+        const cardCounter = document.getElementById('cardCounter');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function updateCard() {
+            flashcard.classList.remove('rotate-y-180');
+            setTimeout(() => {
+                const data = cardsData[currentCardIndex];
+                cardWord.textContent = data.word;
+                cardSub.textContent = data.sub;
+                cardTranslation.textContent = data.translation;
+                cardExample.textContent = `"${data.example}"`;
+                cardCategory.textContent = data.category;
+                cardLang.textContent = data.lang;
+                cardCounter.textContent = `${currentCardIndex + 1} / ${cardsData.length}`;
+            }, 250);
+        }
+
+        flashcard.addEventListener('click', () => {
+            flashcard.classList.toggle('rotate-y-180');
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentCardIndex = (currentCardIndex + 1) % cardsData.length;
+            updateCard();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentCardIndex = (currentCardIndex - 1 + cardsData.length) % cardsData.length;
+            updateCard();
+        });
+
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            formStatus.classList.remove('hidden');
+            contactForm.reset();
+            setTimeout(() => {
+                formStatus.classList.add('hidden');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
